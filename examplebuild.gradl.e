@@ -13,6 +13,8 @@ repositories {
 def runeLiteVersion = 'latest.release'
 
 dependencies {
+	annotationProcessor()
+
 	compileOnly group: 'net.runelite', name:'client', version: runeLiteVersion
 
 	compileOnly 'org.projectlombok:lombok:1.18.30'
@@ -23,7 +25,7 @@ dependencies {
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 }
 
-group = 'com.example'
+group = 'com.plugintest'
 version = '1.0-SNAPSHOT'
 
 tasks.withType(JavaCompile) {
